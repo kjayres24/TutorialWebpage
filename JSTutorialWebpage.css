@@ -1,6 +1,10 @@
 body {
     margin: 0px;
     background-color: whitesmoke;
+    overflow-y: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 2000px;
 }
 
 /*NAVBAR NOTES
@@ -36,7 +40,7 @@ text-decoration: none;
 
 }
 
-/*SIDEBAR*/
+/*SIDEBAR/NAVBAR*/
 .sidebar {
     height: 100%; 
     width: 160px; 
@@ -44,19 +48,18 @@ text-decoration: none;
     z-index: 1;
     top: 0; 
     left: 0;
-    background-color: paleturquoise;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     padding-top: 20px;
-    
+    background-color: paleturquoise;
   }
 
   .sidebar a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     color: #818181;
     display: block;
-    list-style: none;
+    
   }
   .sidebar a:hover {
     color: black;
@@ -86,9 +89,44 @@ text-decoration: none;
   }
 
   .article1 {
-      background-color: slateblue;
-      padding: 40px;
+      background-color: #818181;
+      padding: 25px;
       float: center;
-      
-
+      position: absolute;
+      margin-left: 300px;
+      margin-right: 300px;
+      color: paleturquoise;
+      list-style: none;
   }
+
+  .article2 {
+    background-color: #818181;
+    padding: 25px;
+    float: center;
+    position: absolute;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: paleturquoise;
+    z-index: 1;
+    top: 600px;
+  }
+
+.article3 {
+    background-color: #818181;
+    padding: 25px;
+    float: center;
+    position: absolute;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: paleturquoise;
+    z-index: 1;
+    top: 950px;
+}
+
+.list1 {
+    text-align: left;
+}
+
+.list2 {
+    text-align: left;
+}
