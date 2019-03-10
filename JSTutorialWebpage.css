@@ -1,10 +1,16 @@
 body {
     margin: 0px;
-    background-color: whitesmoke;
     overflow-y: auto;
     overflow: scroll;
     overflow-x: hidden;
-    margin-bottom: 2000px;
+    margin-bottom: 1295px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("https://images.pexels.com/photos/934011/pexels-photo-934011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    object-fit: none;
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+    
 }
 
 /*NAVBAR NOTES
@@ -33,7 +39,9 @@ text-decoration: none;
 
 
 #header {
-    font-size: 200%;
+    font-size: 300%;
+    font-family: 'Dancing Script', cursive;
+    padding: 5px;
 }
 .wrapper {
     text-align: center;
@@ -50,24 +58,34 @@ text-decoration: none;
     left: 0;
     overflow-x: hidden;
     padding-top: 20px;
-    background-color: paleturquoise;
+    background-color: #D8BFD8;
   }
 
   .sidebar a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: black;
     display: block;
+    
     
   }
   .sidebar a:hover {
-    color: black;
+    color:#818181;
   }
 
   .main {
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
+  }
+
+  .headersidebar {
+      color:black;
+      font-size: 30px;
+      margin-right: 35px;
+      text-align: center;
+      padding: 4px;
+      font-family: 'Dancing Script', cursive;
   }
 
   /*FOOTER*/
@@ -77,9 +95,10 @@ text-decoration: none;
       bottom: 0;
       width: 100%;
       background-color:  #818181;
-      color:paleturquoise;
+      color: black;
       text-align: left;
       z-index: 1;
+      opacity: 0.8;
   }
 
   /*BODY*/
@@ -95,8 +114,10 @@ text-decoration: none;
       position: absolute;
       margin-left: 300px;
       margin-right: 300px;
-      color: paleturquoise;
+      color: black;
       list-style: none;
+      border: 1px solid black;
+      box-shadow:  5px 10px 8px #888888;
   }
 
   .article2 {
@@ -106,9 +127,11 @@ text-decoration: none;
     position: absolute;
     margin-left: 300px;
     margin-right: 300px;
-    color: paleturquoise;
+    color: black;
     z-index: 1;
-    top: 600px;
+    top: 700px;
+    border: 1px solid black;
+    box-shadow:  5px 10px 8px #888888;
   }
 
 .article3 {
@@ -118,9 +141,11 @@ text-decoration: none;
     position: absolute;
     margin-left: 300px;
     margin-right: 300px;
-    color: paleturquoise;
+    color: black;
     z-index: 1;
-    top: 950px;
+    top: 1080px;
+    border: 1px solid black;
+    box-shadow:  5px 10px 8px #888888;
 }
 
 .list1 {
@@ -130,3 +155,10 @@ text-decoration: none;
 .list2 {
     text-align: left;
 }
+
+.list3 {
+    text-align: left;
+}
+
+
+
