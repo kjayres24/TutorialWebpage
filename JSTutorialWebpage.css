@@ -1,42 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0px;
-    overflow-y: auto;
+    /* overflow-y: auto;
     overflow: scroll;
-    overflow-x: hidden;
-    margin-bottom: 1295px;
+    overflow-x: hidden; */
     font-family: 'Open Sans', sans-serif;
     background-image: url("https://images.pexels.com/photos/934011/pexels-photo-934011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    object-fit: none;
-    background-size: auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0px -200px;
     
     
 }
-
-/*NAVBAR NOTES
-
-#navbar {
-    background-color: rgb(149, 90, 205);
-    padding: 4px;
-
-
-}
-li{
-    display: inline-block;
-    padding: 5px;
-}
-
-ul {
-    margin-left: 1250px;
-    font-size: 100%;
-}
-
-li a:hover {
-color: black;
-text-decoration: none;
-}
-*/
-
 
 #header {
     font-size: 300%;
@@ -51,7 +28,7 @@ text-decoration: none;
 /*SIDEBAR/NAVBAR*/
 .sidebar {
     height: 100%; 
-    width: 160px; 
+    width: 175px; 
     position: fixed; 
     z-index: 1;
     top: 0; 
@@ -59,6 +36,17 @@ text-decoration: none;
     overflow-x: hidden;
     padding-top: 20px;
     background-color: #D8BFD8;
+    list-style-type: none;
+    
+  }
+  ul{
+      list-style: none;
+     
+  }
+
+  .list {
+      text-align: left;
+      margin-left: -30px;
   }
 
   .sidebar a {
@@ -68,24 +56,26 @@ text-decoration: none;
     color: black;
     display: block;
     
-    
   }
   .sidebar a:hover {
     color:#818181;
+    
   }
 
   .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-left: 160px;
     padding: 0px 10px;
+    
   }
 
   .headersidebar {
       color:black;
       font-size: 30px;
-      margin-right: 35px;
+      margin-right: 60px;
       text-align: center;
       padding: 4px;
       font-family: 'Dancing Script', cursive;
+      
   }
 
   /*FOOTER*/
@@ -118,6 +108,7 @@ text-decoration: none;
       list-style: none;
       border: 1px solid black;
       box-shadow:  5px 10px 8px #888888;
+      top: 200px;
   }
 
   .article2 {
@@ -129,7 +120,7 @@ text-decoration: none;
     margin-right: 300px;
     color: black;
     z-index: 1;
-    top: 700px;
+    top: 800px;
     border: 1px solid black;
     box-shadow:  5px 10px 8px #888888;
   }
@@ -143,22 +134,28 @@ text-decoration: none;
     margin-right: 300px;
     color: black;
     z-index: 1;
-    top: 1080px;
+    top: 1280px;
     border: 1px solid black;
     box-shadow:  5px 10px 8px #888888;
 }
 
 .list1 {
     text-align: left;
+    list-style: none;
 }
 
 .list2 {
     text-align: left;
+    list-style: none;
 }
 
 .list3 {
     text-align: left;
+    list-style: none;
 }
 
+.margin {
+    text-align: left;
+}
 
 

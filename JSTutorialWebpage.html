@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,60 +11,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
- 
+
 </head>
+
 <body>
- <!--REQUIREMENTS: 
-        B): <header>, <article> 
-        E): Links in nav must be able to direct users to the matching topic sections
-        G): Must make use of at least one AnimateCSS animation
-        
 
-     <!-- NAVBAR-->
-     <section class="sidebar">
-         <nav>
-             <sidebar>
+
+
+    <!-- NAVBAR-->
+    <section class="sidebar">
+
+        <nav>
+            <sidebar>
                 <ul>
-                    <li><a href="">Home</a></li>    
-                    <li><a href="">Objects</a></li>
-                        <li><a href="">Arrays</a></li>
-                        <li><a href="">For Loops</a></li>
+                    <li class="list"><a href="">Home</a></li>
+                    <li class="list"><a href="#objects">Objects</a></li>
+                    <li class="list"><a href="#arrays">Arrays</a></li>
+                    <li class="list"><a href="#loops">For Loops</a></li>
 
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                            <h3 class="headersidebar">Helpful Links</h3>
-                          <li><a href="https://www.w3schools.com/" target="blank"> W3Schools</a></li>
-                          <li><a href="https://developer.mozilla.org/en-US/" target="blank">MDN Docs</a></li>
-                          <li><a href="https://www.codecademy.com/" target="blank">Code Cademy</a></li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h3 class="headersidebar">Helpful Links</h3>
+                    <li class="list"><a href="https://www.w3schools.com/" target="blank"> W3Schools</a></li>
+                    <li class="list"><a href="https://developer.mozilla.org/en-US/" target="blank">MDN Docs</a></li>
+                    <li class="list"><a href="https://www.codecademy.com/" target="blank">Code Cademy</a></li>
 
                 </ul>
-             </sidebar>
-        </nav>       
+            </sidebar>
+        </nav>
 
-     </section>
+    </section>
 
-     <!--HEADER-->
+    <!--HEADER-->
 
-        <section id="header">
-         <div class="wrapper">
-             <header class="animated bounceInDown">
-             <h1>JavaScript Concepts</h1>
-             </header>
-         </div>
+    <section id="header">
+        <div class="wrapper">
+            <header class="animated bounceInDown">
+                <h1>JavaScript Concepts</h1>
+            </header>
+        </div>
 
 
-     </section>
-     <!--BODY-->
+    </section>
+    <!--BODY-->
 
-     <section id="body">
-         <article class="article1">
-             <h2>Objects</h2>
-             <p>Objects are a collection of properties. My dog is an object and he holds many properties such as breed, name, age, etc. The property values differ from object to object or more specifically in my case, dog to dog. Each variable contains an object that contains values. Objects can hold a lot of related information. Example: my dog, which is the object has a key of ‘name’. His name, which is the value, is “Groot”.</p>
-        <br>    
-             <ul class="list1">
+    <section id="body">
+        <article class="article1" id="objects">
+            <h2>Objects</h2>
+            <p>Objects are a collection of properties. My dog is an object and he holds many properties such as breed,
+                name, age, etc. The property values differ from object to object or more specifically in my case, dog to
+                dog. Each variable contains an object that contains values. Objects can hold a lot of related
+                information. Example: my dog, which is the object has a key of ‘name’. His name, which is the value, is
+                “Groot”.</p>
+            <h5 class="margin">Example:</h5>
+            <ul class="list1">
                 <li>Let dog = { </li>
                 <li>Name: “Groot”,</li>
                 <li>Breed: “Great Dane”,</li>
@@ -71,37 +75,45 @@
                 <li>Weight: 150lbs,</li>
                 <li>Good Boy: True</li>
             </ul>
-            </article>
-         <article class="article2">
-             <h2>Arrays</h2>
-             <p>Arrays are a type of variable. They can hold many values under a single name. An array's length can change at any time and its data can be stored at non-contiguous locations. Arrays are usually in brackets [ ] and are separated by commas. The index of an array starts at 0 and continues upward.</p>
-            <br>
+        </article>
+        <article class="article2" id="arrays">
+            <h2>Arrays</h2>
+            <p>Arrays are a type of variable. They can hold many values under a single name. An array's length can
+                change at any time and its data can be stored at non-contiguous locations. Arrays are usually in
+                brackets [ ] and are separated by commas. The index of an array starts at 0 and continues upward.</p>
+
+            <h5 class="margin">Example:</h5>
             <ul class="list2">
                 <li>Let dogBreeds = [“Great Dane”, “Newfoundland”, “Beagle”, “Corgi”];</li>
-                <li>Console.log(dogBreeds[0]) ↢ this will spit out the dog breed Great Dane because it is in the 0 index. </li>
+                <li>Console.log(dogBreeds[0]) ↢ this will spit out the dog breed Great Dane because it is in the 0
+                    index. </li>
             </ul>
-            </article>
-            <article class="article3">
-                <h2>For Loops</h2>
-                <p>A For Loop runs through a block of code a number of times which loops through the properties of an object. If you want to run a code over and over again, then a For Loop is your answer. It changes the value of the code you inputted. For loops are divided into three statements. The first sets a variable before the loop starts (i = 1). The second defines the condition for the loop to run (i < 9) and the third increases the value each time (i++). With the example below, the answer will come out as 1, 2, 3, 4, 5, 6, 7, 8, 9.</p>
-            <br>
-            <ul class="list3">
-                <li>For (i = 1; i < 9; i++) {</li>
-                <li>console.log(i);</li>    
-                <li>{</li>
-            </ul>
-            </article>
+        </article>
+        <article class="article3" id="loops">
+            <h2>For Loops</h2>
+            <p>A For Loop runs through a block of code a number of times which loops through the properties of an
+                object. If you want to run a code over and over again, then a For Loop is your answer. It changes the
+                value of the code you inputted. For loops are divided into three statements. The first sets a variable
+                before the loop starts (i = 1). The second defines the condition for the loop to run (i < 9) and the
+                    third increases the value each time (i++). With the example below, the answer will come out as 1, 2,
+                    3, 4, 5, 6, 7, 8, 9.</p> <h5 class="margin">Example:</h5>
+                    <ul class="list3">
+                        <li>For (i = 1; i < 9; i++) {</li> <li>console.log(i);</li>
+                        <li>{</li>
+                    </ul>
+        </article>
 
-     </section>
+    </section>
 
-     <!--FOOTER-->
+    <!--FOOTER-->
 
-     <section id="footer">
-         <p> Copyright © Katie Ayres at Eleven Fifty Academy</p>
+    <section id="footer">
+        <p> Copyright © Katie Ayres at Eleven Fifty Academy</p>
 
 
-     </section>
+    </section>
 
-    
+
 </body>
+
 </html>
